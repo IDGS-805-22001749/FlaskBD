@@ -42,7 +42,7 @@ class UserForm2(Form):
 
     [validators.number_range(min=1, max=20,message='valor no valido')])
 
-    nombre=StringField('nombre',[
+    nombre=StringField('Nombre',[
 
         validators.DataRequired(message='El nombre es requerido'),
 
@@ -52,7 +52,7 @@ class UserForm2(Form):
 
    
 
-    apaterno=StringField('apaterno',[
+    apaterno=StringField('Apellido',[
 
         validators.DataRequired(message='El apellido es requerido')
 
@@ -60,7 +60,7 @@ class UserForm2(Form):
 
    
 
-    email=EmailField('correo',[
+    email=EmailField('Correo',[
 
         validators.DataRequired(message='El apellido es requerido'),
 
